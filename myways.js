@@ -13,7 +13,7 @@ const submit = () => {
   let sum = 0;
   while (r) {
     sum += r % 10;
-    r = r / 10;
+    r = Math.floor(r/10);
   }
   let string = "";
   for (let i = 1; i <= sum; i++) {
